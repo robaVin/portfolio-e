@@ -1,0 +1,449 @@
+{
+  "s-brand-stamp": {
+    "title": "Studio Brand Stamp",
+    "description": "A custom stamp design for studio branding, ideal for packaging and authenticating products.",
+    "image": "s-brand-stamp.jpg",
+    "palette": ["black", "white", "orange"],
+    "tags": ["studio", "stamp", "branding", "packaging"]
+  },
+  "s-brand-sign-3": {
+    "title": "Studio Brand Sign (Variant 3)",
+    "description": "Third variation of the studio signage, showcasing bold typography and contemporary studio identity.",
+    "image": "s-brand-sign-3.jpg",
+    "palette": ["white", "black", "orange"],
+    "tags": ["studio", "sign", "branding", "variant"]
+  },
+  "s-brand-sign": {
+    "title": "Studio Brand Sign",
+    "description": "Primary signage for the studio, designed for maximum visibility and modern appeal.",
+    "image": "s-brand-sign.jpg",
+    "palette": ["black", "white", "orange"],
+    "tags": ["studio", "sign", "branding", "modern"]
+  },
+  "s-brand-notebook": {
+    "title": "Studio Branded Notebook",
+    "description": "A stylish studio notebook, perfect for jotting down ideas or offering as a branded giveaway.",
+    "image": "s-brand-notebook.jpg",
+    "palette": ["white", "orange", "gray"],
+    "tags": ["studio", "notebook", "stationery", "branding"]
+  },
+  "s-brand-l-banner": {
+    "title": "Studio Light Banner",
+    "description": "A banner design with a light color palette, used for studio promotions and special events.",
+    "image": "s-brand-l-banner.png",
+    "palette": ["white", "orange", "light gray"],
+    "tags": ["studio", "banner", "light", "promotion"]
+  },
+  "s-brand-keychain": {
+    "title": "Studio Keychain",
+    "description": "Custom branded keychain representing the studio’s creative identity.",
+    "image": "s-brand-keychain.jpg",
+    "palette": ["orange", "white", "black"],
+    "tags": ["studio", "keychain", "branding", "merchandise"]
+  },
+  "s-brand-env": {
+    "title": "Studio Envelope",
+    "description": "A branded envelope design for studio correspondence and special mailings.",
+    "image": "s-brand-env.jpg",
+    "palette": ["white", "orange", "gray"],
+    "tags": ["studio", "envelope", "stationery", "branding"]
+  },
+  "s-brand-d-banner": {
+    "title": "Studio Dark Banner",
+    "description": "A dramatic banner design featuring a dark theme, perfect for nighttime events and bold promotions.",
+    "image": "s-brand-d-banner.png",
+    "palette": ["black", "orange", "white"],
+    "tags": ["studio", "banner", "dark", "event"]
+  },
+  "s-brand-d": {
+    "title": "Studio Branding (Dark Theme)",
+    "description": "Studio branding materials in a dark color palette, offering a sleek and modern appearance.",
+    "image": "s-brand-d.png",
+    "palette": ["black", "orange", "white"],
+    "tags": ["studio", "branding", "dark", "modern"]
+  },
+  "o-brand-poster-l-2": {
+    "title": "Coffee Shop Poster (Light, Set of 2)",
+    "description": "Two versions of a light-themed poster for the coffee shop, emphasizing warmth and welcoming ambiance.",
+    "image": "o-brand-poster-l-2.png",
+    "palette": ["beige", "brown", "white"],
+    "tags": ["coffee shop", "poster", "light", "set"]
+  },
+  "o-brand-poster-d": {
+    "title": "Coffee Shop Poster (Dark)",
+    "description": "A coffee shop poster with a dark palette, perfect for evening promotions and specialty brews.",
+    "image": "o-brand-poster-d.png",
+    "palette": ["brown", "black", "cream"],
+    "tags": ["coffee shop", "poster", "dark", "promotion"]
+  },
+  "o-brand-l-blue": {
+    "title": "Coffee Shop Branding (Light Blue)",
+    "description": "A bright, blue-accented branding design for the coffee shop, evoking freshness and tranquility.",
+    "image": "o-brand-l-blue.png",
+    "palette": ["light blue", "white", "brown"],
+    "tags": ["coffee shop", "branding", "light", "blue"]
+  },
+  "o-brand-glass": {
+    "title": "Coffee Shop Branded Glass",
+    "description": "A custom glassware design that enhances the coffee shop’s visual identity and drink presentation.",
+    "image": "o-brand-glass.jpg",
+    "palette": ["clear", "brown", "white"],
+    "tags": ["coffee shop", "glass", "branding", "merchandise"]
+  },
+  "o-brand-d-brown": {
+    "title": "Coffee Shop Branding (Dark Brown)",
+    "description": "A branding set in deep brown tones, conveying richness and tradition for the coffee shop.",
+    "image": "o-brand-d-brown.png",
+    "palette": ["dark brown", "beige", "white"],
+    "tags": ["coffee shop", "branding", "dark", "brown"]
+  },
+  "o-brand-d-blue": {
+    "title": "Coffee Shop Branding (Dark Blue)",
+    "description": "A sophisticated branding design for the coffee shop, using dark blue and neutral tones.",
+    "image": "o-brand-d-blue.png",
+    "palette": ["dark blue", "beige", "white"],
+    "tags": ["coffee shop", "branding", "dark", "blue"]
+  },
+  "corp-card": {
+    "title": "Corporate Business Card",
+    "description": "A professional business card for corporate networking, reflecting the brand’s core values.",
+    "image": "corp-card.jpg",
+    "palette": ["white", "navy", "silver"],
+    "tags": ["corporate", "business card", "networking"]
+  },
+  "corp-env": {
+    "title": "Corporate Envelope",
+    "description": "A clean, branded envelope for corporate communication and mailings.",
+    "image": "corp-env.png",
+    "palette": ["white", "gray", "navy"],
+    "tags": ["corporate", "envelope", "stationery"]
+  },
+  "corp-logo-l": {
+    "title": "Corporate Logo (Light Theme)",
+    "description": "A refined corporate logo displayed on a light background for formal and digital uses.",
+    "image": "corp-logo-l.png",
+    "palette": ["white", "navy", "blue"],
+    "tags": ["corporate", "logo", "light", "branding"]
+  },
+  "corp-paper": {
+    "title": "Corporate Letter Paper",
+    "description": "Corporate letter paper designed for correspondence, with a balanced, modern layout.",
+    "image": "corp-paper.jpg",
+    "palette": ["white", "gray", "navy"],
+    "tags": ["corporate", "letter paper", "stationery"]
+  },
+  "corp-pen": {
+    "title": "Corporate Pen",
+    "description": "A signature pen design for corporate branding, merging style and functionality.",
+    "image": "corp-pen.png",
+    "palette": ["silver", "navy", "white"],
+    "tags": ["corporate", "pen", "branding"]
+  },
+  "corp-stamp": {
+    "title": "Corporate Stamp",
+    "description": "A professional stamp for branding and official corporate documents.",
+    "image": "corp-stamp.jpg",
+    "palette": ["navy", "white", "silver"],
+    "tags": ["corporate", "stamp", "branding"]
+  },
+  "mag-banner": {
+    "title": "Magazine Banner",
+    "description": "A promotional banner for the magazine, designed for events and launches.",
+    "image": "mag-banner.jpg",
+    "palette": ["red", "white", "gray"],
+    "tags": ["magazine", "banner", "event", "promotion"]
+  },
+  "mag-banner-sign": {
+    "title": "Magazine Banner Sign",
+    "description": "A banner sign used for magazine branding at expos and media events.",
+    "image": "mag-banner-sign.png",
+    "palette": ["red", "white", "black"],
+    "tags": ["magazine", "banner", "sign", "branding"]
+  },
+  "mag-card": {
+    "title": "Magazine Business Card",
+    "description": "Business card for magazine professionals, balancing creativity and credibility.",
+    "image": "mag-card.png",
+    "palette": ["white", "red", "gray"],
+    "tags": ["magazine", "business card", "creative"]
+  },
+  "mag-cata": {
+    "title": "Magazine Catalogue",
+    "description": "A comprehensive catalogue showcasing magazine issues and featured articles.",
+    "image": "mag-cata.jpg",
+    "palette": ["white", "gray", "red"],
+    "tags": ["magazine", "catalogue", "publication"]
+  },
+  "mag-env-l": {
+    "title": "Magazine Envelope (Light)",
+    "description": "A light-themed envelope for magazine correspondence and subscriptions.",
+    "image": "mag-env-l.png",
+    "palette": ["white", "gray", "red"],
+    "tags": ["magazine", "envelope", "light", "stationery"]
+  },
+  "mag-leaflet": {
+    "title": "Magazine Leaflet",
+    "description": "Promotional leaflet for magazine outreach, highlighting key features and subscription info.",
+    "image": "mag-leaflet.jpg",
+    "palette": ["white", "red", "gray"],
+    "tags": ["magazine", "leaflet", "promotion"]
+  },
+  "mag-leaflet-2": {
+    "title": "Magazine Leaflet (Variant 2)",
+    "description": "Second variant of the magazine leaflet, offering an alternate layout and call to action.",
+    "image": "mag-leaflet-2.jpg",
+    "palette": ["red", "white", "gray"],
+    "tags": ["magazine", "leaflet", "variant", "promotion"]
+  },
+  "mag-poster": {
+    "title": "Magazine Poster",
+    "description": "Poster design for magazine launches, visually compelling and on-brand.",
+    "image": "mag-poster.jpg",
+    "palette": ["red", "white", "black"],
+    "tags": ["magazine", "poster", "launch"]
+  },
+  "mag-storefront-2": {
+    "title": "Magazine Storefront (Version 2)",
+    "description": "A secondary storefront concept for magazine distribution, designed to boost retail presence.",
+    "image": "mag-storefront-2.png",
+    "palette": ["red", "white", "gray"],
+    "tags": ["magazine", "storefront", "retail", "version"]
+  },
+  "mag-web-ipad": {
+    "title": "Magazine Website on iPad",
+    "description": "A digital mockup showing the magazine’s website displayed on an iPad device.",
+    "image": "mag-web-ipad.png",
+    "palette": ["white", "gray", "red"],
+    "tags": ["magazine", "website", "ipad", "digital"]
+  },
+  "o-brand-l-brown": {
+    "title": "Coffee Shop Branding (Light Brown)",
+    "description": "Branding suite for the coffee shop, utilizing a warm, light brown palette for a cozy atmosphere.",
+    "image": "o-brand-l-brown.png",
+    "palette": ["light brown", "white", "cream"],
+    "tags": ["coffee shop", "branding", "light", "brown"]
+  },
+  "o-brand-mug": {
+    "title": "Coffee Shop Mug",
+    "description": "Custom mug design that reinforces the coffee shop’s brand with every sip.",
+    "image": "o-brand-mug.jpg",
+    "palette": ["white", "brown", "beige"],
+    "tags": ["coffee shop", "mug", "branding", "merchandise"]
+  },
+  "o-brand-poster": {
+    "title": "Coffee Shop Poster",
+    "description": "An inviting poster for the coffee shop, designed to attract customers and promote new blends.",
+    "image": "o-brand-poster.jpg",
+    "palette": ["brown", "beige", "white"],
+    "tags": ["coffee shop", "poster", "promotion"]
+  },
+  "o-brand-stationery": {
+    "title": "Coffee Shop Stationery",
+    "description": "Coordinated stationery set for the coffee shop, featuring letterheads and notepads.",
+    "image": "o-brand-stationery.jpg",
+    "palette": ["white", "brown", "cream"],
+    "tags": ["coffee shop", "stationery", "branding"]
+  },
+  "o-brand-storefront": {
+    "title": "Coffee Shop Storefront",
+    "description": "A storefront design concept that reflects the inviting and authentic spirit of the coffee shop.",
+    "image": "o-brand-storefront.jpg",
+    "palette": ["brown", "cream", "white"],
+    "tags": ["coffee shop", "storefront", "retail"]
+  },
+  "s-brand-l": {
+    "title": "Studio Branding (Light Theme)",
+    "description": "A bright and vibrant branding suite for the studio, optimized for light backgrounds.",
+    "image": "s-brand-l.png",
+    "palette": ["white", "orange", "gray"],
+    "tags": ["studio", "branding", "light"]
+  },
+  "s-brand-sign-2": {
+    "title": "Studio Brand Sign (Variant 2)",
+    "description": "Second variant of the studio sign, with a fresh approach to signage and visual identity.",
+    "image": "s-brand-sign-2.jpg",
+    "palette": ["white", "orange", "black"],
+    "tags": ["studio", "sign", "variant", "branding"]
+  },
+  "s-brand-sign-inside": {
+    "title": "Studio Indoor Sign",
+    "description": "Signage designed for interior spaces within the studio, balancing subtlety and recognition.",
+    "image": "s-brand-sign-inside.jpg",
+    "palette": ["white", "gray", "orange"],
+    "tags": ["studio", "sign", "indoor", "branding"]
+  },
+    "mag-badge": {
+    "title": "Magazine Badge",
+    "description": "A creative badge designed for magazine contributors or events, blending bold design with easy recognition.",
+    "image": "mag-badge.jpg",
+    "palette": ["red", "white", "black"],
+    "tags": ["magazine", "badge", "event", "creative"]
+  },
+  "mag-brand-guidelines": {
+    "title": "Magazine Brand Guidelines",
+    "description": "Complete branding rules for the magazine, covering logo usage, colors, and typographic styles for consistent publishing.",
+    "image": "mag-brand-guidelines.png",
+    "palette": ["red", "gray", "white"],
+    "tags": ["magazine", "brand", "guidelines", "branding"]
+  },
+  "mag-cards": {
+    "title": "Magazine Business Cards",
+    "description": "Stylish business card designs tailored for magazine editors and journalists, balancing creativity with professionalism.",
+    "image": "mag-cards.png",
+    "palette": ["white", "black", "red"],
+    "tags": ["magazine", "business card", "editor", "creative"]
+  },
+  "mag-cata-2": {
+    "title": "Magazine Catalogue (Set of 2)",
+    "description": "A set of two magazine catalogue covers, each presenting a distinct visual style for varied content collections.",
+    "image": "mag-cata-2.jpg",
+    "palette": ["white", "red", "gray"],
+    "tags": ["magazine", "catalogue", "cover", "set"]
+  },
+  "mag-cata-open": {
+    "title": "Open Magazine Catalogue",
+    "description": "An open spread of the magazine's catalogue, showcasing layout design and editorial content arrangement.",
+    "image": "mag-cata-open.jpg",
+    "palette": ["white", "gray", "red"],
+    "tags": ["magazine", "catalogue", "layout", "editorial"]
+  },
+  "mag-env-d": {
+    "title": "Magazine Envelope (Dark Theme)",
+    "description": "A magazine-branded envelope in a dark color scheme, perfect for premium mailings and special editions.",
+    "image": "mag-env-d.png",
+    "palette": ["black", "red", "white"],
+    "tags": ["magazine", "envelope", "dark", "stationery"]
+  },
+  "mag-full": {
+    "title": "Magazine Full Layout",
+    "description": "A full magazine layout, combining feature articles, advertisements, and imagery for a complete reading experience.",
+    "image": "mag-full.png",
+    "palette": ["white", "red", "black"],
+    "tags": ["magazine", "layout", "editorial", "full"]
+  },
+  "mag-logo": {
+    "title": "Magazine Logo",
+    "description": "A distinctive magazine logo design, crafted for strong recognition on both print and digital platforms.",
+    "image": "mag-logo.jpg",
+    "palette": ["red", "black", "white"],
+    "tags": ["magazine", "logo", "branding", "identity"]
+  },
+  "mag-announcement": {
+    "title": "Magazine Announcement Card",
+    "description": "A visually striking announcement card for magazine launches or events, designed to grab attention.",
+    "image": "mag-announcement.png",
+    "palette": ["red", "white", "gray"],
+    "tags": ["magazine", "announcement", "event", "card"]
+  },
+  "mag-notebook": {
+    "title": "Magazine Notebook",
+    "description": "A branded notebook design for the magazine, ideal for staff notes and reader giveaways.",
+    "image": "mag-notebook.jpg",
+    "palette": ["white", "red", "black"],
+    "tags": ["magazine", "notebook", "stationery", "giveaway"]
+  },
+  "mag-pen": {
+    "title": "Magazine Pen",
+    "description": "A custom-designed pen that complements the magazine's identity, merging practicality with brand aesthetics.",
+    "image": "mag-pen.jpg",
+    "palette": ["red", "white", "black"],
+    "tags": ["magazine", "pen", "stationery", "branding"]
+  },
+  "mag-pen-2": {
+    "title": "Magazine Pen Set (2 Variants)",
+    "description": "Two magazine-branded pen designs, offering variety for promotional campaigns and editorial use.",
+    "image": "mag-pen-2.jpg",
+    "palette": ["white", "black", "red"],
+    "tags": ["magazine", "pen", "set", "stationery"]
+  },
+  "mag-price-tag": {
+    "title": "Magazine Price Tag",
+    "description": "A price tag design for magazine issues or merchandise, blending clarity with brand identity.",
+    "image": "mag-price-tag.png",
+    "palette": ["red", "white", "gray"],
+    "tags": ["magazine", "price tag", "merchandise", "branding"]
+  },
+  "mag-stationery": {
+    "title": "Magazine Stationery",
+    "description": "A complete stationery suite for the magazine, featuring coordinated letterheads, envelopes, and notepads.",
+    "image": "mag-stationery.jpg",
+    "palette": ["white", "red", "black"],
+    "tags": ["magazine", "stationery", "branding", "suite"]
+  },
+  "mag-storefront": {
+    "title": "Magazine Storefront",
+    "description": "A concept storefront design for magazine distribution, emphasizing visibility and modern branding.",
+    "image": "mag-storefront.jpg",
+    "palette": ["red", "white", "gray"],
+    "tags": ["magazine", "storefront", "retail", "concept"]
+  },"corp-storefront": {
+    "title": "Corporate Storefront",
+    "description": "A modern corporate storefront design emphasizing clean lines and approachability, ideal for urban retail spaces.",
+    "image": "corp-storefront.jpg",
+    "palette": ["white", "gray", "blue"],
+    "tags": ["corporate", "storefront", "retail", "modern"]
+  },
+  "corp-stationery": {
+    "title": "Corporate Stationery",
+    "description": "Elegant stationery set for corporate branding, including letterheads and business cards, crafted for professional correspondence.",
+    "image": "corp-stationery.jpg",
+    "palette": ["white", "navy", "silver"],
+    "tags": ["corporate", "stationery", "branding", "elegant"]
+  },
+  "corp-poster": {
+    "title": "Corporate Poster",
+    "description": "A bold, eye-catching poster design for corporate events and promotions, featuring strong typography and brand colors.",
+    "image": "corp-poster.jpg",
+    "palette": ["blue", "black", "white"],
+    "tags": ["corporate", "poster", "event", "typography"]
+  },
+  "corp-badge": {
+    "title": "Corporate Badge",
+    "description": "A sleek badge design for corporate employees, combining minimalism with easy identification.",
+    "image": "corp-badge.png",
+    "palette": ["silver", "white", "navy"],
+    "tags": ["corporate", "badge", "minimal", "id"]
+  },
+  "corp-brand-guidelines": {
+    "title": "Corporate Brand Guidelines",
+    "description": "Comprehensive corporate brand guidelines, outlining logo usage, color palette, and typography standards for consistent branding.",
+    "image": "corp-brand-guidelines.jpg",
+    "palette": ["blue", "gray", "white"],
+    "tags": ["corporate", "brand", "guidelines", "branding"]
+  },
+  "corp-card-2": {
+    "title": "Corporate Business Card (Set of 2)",
+    "description": "Two distinct business card variations for corporate professionals, balancing boldness and subtlety.",
+    "image": "corp-card-2.jpg",
+    "palette": ["white", "gray", "navy"],
+    "tags": ["corporate", "business card", "double", "set", "branding"]
+  },
+  "corp-env-2": {
+    "title": "Corporate Envelope (Set of 2)",
+    "description": "A duo of envelope designs—one classic, one modern—suitable for corporate communications.",
+    "image": "corp-env-2.jpg",
+    "palette": ["white", "gray", "blue"],
+    "tags": ["corporate", "envelope", "set", "stationery"]
+  },
+  "corp-logo-d": {
+    "title": "Corporate Logo (Dark Theme)",
+    "description": "A refined corporate logo presented in a dark color scheme for stylish, high-contrast branding.",
+    "image": "corp-logo-d.png",
+    "palette": ["black", "white", "blue"],
+    "tags": ["corporate", "logo", "dark", "branding"]
+  },
+  "corp-paper-2": {
+    "title": "Corporate Letter Paper (Set of 2)",
+    "description": "Two variations of letter paper, both tailored for corporate correspondence—formal and creative.",
+    "image": "corp-paper-2.jpg",
+    "palette": ["white", "blue", "gray"],
+    "tags": ["corporate", "letter paper", "set", "stationery"]
+  },
+  "corp-pen-2": {
+    "title": "Corporate Pen Design (Set of 2)",
+    "description": "A pair of sleek pen designs that complement the corporate stationery suite, blending elegance with usability.",
+    "image": "corp-pen-2.jpg",
+    "palette": ["silver", "navy", "white"],
+    "tags": ["corporate", "pen", "stationery", "set"]
+  }
+}
