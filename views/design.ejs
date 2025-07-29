@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= design.title %> - Design Detail</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+        font-family: "Special Gothic Expanded One", sans-serif;
+    }
+    .container {
+        max-width: 650px; 
+        margin: 3rem auto; 
+        background: #fff; 
+        border-radius: 1rem; 
+        box-shadow: 0 4px 16px rgba(35,30,45,0.06); 
+        padding: 2rem; 
+    }
+    img { 
+        width: 100%; 
+        margin-bottom: 2rem; 
+    }
+    .back-link {
+        display: inline-block; 
+        margin-bottom: 2rem; 
+        color: #2b2065; 
+        text-decoration: none; 
+    }
+    .back-link:hover { 
+        text-decoration: underline; 
+    }
+    h1 { 
+        font-size: 2rem; 
+    }
+    p { 
+        font-size: 1.1rem;
+    }
+    .flex-main {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 900px;
+}
+.main-image {
+  flex: 1 1 50%;
+  min-width: 250px;
+}
+.main-info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px;
+}
+@media (max-width: 700px) {
+  .flex-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-image, .main-info { min-width: unset; width: 100%; }
+}
+
+  </style>
+</head>
+<body>
+  <a href="/" class="back-link" style="padding-left: 3rem; padding-top:2rem;">&larr; Back to Gallery</a>
+  <!-- main pic -->
+  <div class="container flex-main" style="margin-top:-1rem">
+    <div class="main-image">
+        <img src="/pictures/test/<%= design.image %>" alt="<%= design.title %>">
+    </div>
+    <div class="main-info">
+        <h1><%= design.title %></h1>
+        <p><%= design.description %></p>
+        <div style="margin-top:2rem">
+        <h3>Tags</h3>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <% design.tags.forEach(tag => { %>
+            <a href="/tags/<%= encodeURIComponent(tag) %>" style="background:#f0f0f0;padding:0.5rem 1rem;border-radius:0.5rem;color:#2b2065;text-decoration:none;font-size:1rem;transition:background 0.15s;">
+                <%= tag %>
+            </a>
+        <% }) %>
+        </div>
+    </div>
+    </div>
+</div>
+
+    
+<!-- similar -->
+
+<h3 style="text-align:center;margin-top:2.5rem">Similar Designs</h3>
+<div style="display:flex;justify-content:center;padding:1.5rem 0;">
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+    <% similar.forEach(sim => { %>
+      <a href="/design/<%= sim.id %>" style="width:150px;text-align:center;text-decoration:none;">
+        <img src="/pictures/test/<%= sim.image %>" style="width:100%;border-radius:0.5rem;">
+        <div style="margin-top:0.5rem"><%= sim.title %></div>
+      </a>
+    <% }) %>
+  </div>
+</div>
+
+
+<!-- footer -->
+
+  <footer style="margin-top:2rem;">
+    &copy; <%= new Date().getFullYear() %> Era Avdiu. All rights reserved.
+  </footer>
+
+</body>
+</html>

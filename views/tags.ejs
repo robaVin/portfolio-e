@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Designs tagged <%= tag %></title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: "Special Gothic Expanded One", sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <a href="/" class="back-link" style="margin:2rem;display:inline-block;">&larr; Back to Gallery</a>
+  <h1 style="text-align:center">Designs tagged: <%= tag %></h1>
+  <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
+    <% designs.forEach(design => { %>
+      <a href="/design/<%= design.id %>" style="width:180px;text-align:center;text-decoration:none;">
+        <img src="/pictures/test/<%= design.image %>" style="width:100%;border-radius:0.5rem;">
+        <div style="margin-top:0.5rem"><%= design.title %></div>
+      </a>
+    <% }) %>
+  </div>
+</body>
+</html>
