@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
       return res.status(500).send('Error loading images');
     }
     const images = files.filter(f => /\.(jpg|jpeg|png|gif)$/i.test(f));
-    res.render('index', { images });
+    res.render('index', { images, activePage: 'overview' });
   });
 });
 
@@ -30,7 +30,7 @@ app.get('/logos', (req, res) => {
       return res.status(500).send('Error loading images');
     }
     const images = files.filter(f => /\.(jpg|jpeg|png|gif)$/i.test(f));
-    res.render('logos', { images });
+    res.render('logos', { images, activePage: 'overview' });
   });
 });
 
@@ -43,7 +43,7 @@ app.get('/artwork', (req, res) => {
       return res.status(500).send('Error loading images');
     }
     const images = files.filter(f => /\.(jpg|jpeg|png|gif)$/i.test(f));
-    res.render('artwork', { images });
+    res.render('artwork', { images, activePage: 'overview' });
   });
 });
 
