@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
   <style>
     body {
         font-family: "Special Gothic Expanded One", sans-serif;
@@ -63,7 +64,40 @@
   }
   .main-image, .main-info { min-width: unset; width: 100%; }
 }
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 { font-size: 1.2rem; }
+  p { font-size: 0.96rem; }
+}
+.similar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+@media (max-width: 900px) {
+  .similar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .similar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .similar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 1rem;
+}
   </style>
 </head>
 <body>
@@ -71,8 +105,11 @@
   <!-- main pic -->
   <div class="container flex-main" style="margin-top:-1rem">
     <div class="main-image">
-        <img src="/pictures/test/<%= design.image %>" alt="<%= design.title %>">
+        <a href="/pictures/test/<%= design.image %>" class="glightbox" data-gallery="main">
+            <img src="/pictures/test/<%= design.image %>" alt="<%= design.title %>" style="cursor:zoom-in;">
+        </a>
     </div>
+
     <div class="main-info">
         <h1><%= design.title %></h1>
         <p><%= design.description %></p>
@@ -94,9 +131,9 @@
 
 <h3 style="text-align:center;margin-top:2.5rem">Similar Designs</h3>
 <div style="display:flex;justify-content:center;padding:1.5rem 0;">
-  <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+  <div class="similar-grid">
     <% similar.forEach(sim => { %>
-      <a href="/design/<%= sim.id %>" style="width:150px;text-align:center;text-decoration:none;">
+      <a href="/design/<%= sim.id %>" style="width:100%;max-width:150px;text-align:center;text-decoration:none;">
         <img src="/pictures/test/<%= sim.image %>" style="width:100%;border-radius:0.5rem;">
         <div style="margin-top:0.5rem"><%= sim.title %></div>
       </a>
@@ -105,11 +142,19 @@
 </div>
 
 
+
 <!-- footer -->
 
   <footer style="margin-top:2rem;">
     &copy; <%= new Date().getFullYear() %> Era Avdiu. All rights reserved.
   </footer>
+
+<!-- glight -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+</script>
+
 
 </body>
 </html>
