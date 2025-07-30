@@ -10,94 +10,94 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
   <style>
-    body {
-        font-family: "Special Gothic Expanded One", sans-serif;
-    }
-    .container {
-        max-width: 650px; 
-        margin: 3rem auto; 
-        background: #fff; 
-        border-radius: 1rem; 
-        box-shadow: 0 4px 16px rgba(35,30,45,0.06); 
-        padding: 2rem; 
-    }
-    img { 
-        width: 100%; 
-        margin-bottom: 2rem; 
-    }
-    .back-link {
-        display: inline-block; 
-        margin-bottom: 2rem; 
-        color: #2b2065; 
-        text-decoration: none; 
-    }
-    .back-link:hover { 
-        text-decoration: underline; 
-    }
-    h1 { 
-        font-size: 2rem; 
-    }
-    p { 
-        font-size: 1.1rem;
-    }
-    .flex-main {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  max-width: 900px;
+ body {
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+.container {
+    max-width: 900px;
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(35,30,45,0.06);
+    padding: 2rem;
+}
+img { 
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #2b2065;
+    text-decoration: none;
+}
+.back-link:hover { 
+    text-decoration: underline;
+}
+h1 { font-size: 2rem; }
+p { font-size: 1.1rem; }
+.flex-main {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 900px;
+    width: 100%;
 }
 .main-image {
-  flex: 1 1 50%;
-  min-width: 250px;
+    flex: 1 1 50%;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-info {
-  flex: 1 1 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 200px;
-}
-@media (max-width: 700px) {
-  .flex-main {
-    flex-direction: rows;
-    align-items: center;
-  }
-  .main-image, .main-info { min-width: unset; width: 100%; }
-}
-@media (max-width: 600px) {
-  .container {
-    padding: 1rem;
-  }
-  h1 { font-size: 1.2rem; }
-  p { font-size: 0.96rem; }
-}
-.similar-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  justify-items: center;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 200px;
 }
 @media (max-width: 900px) {
-  .similar-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .flex-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .main-image, .main-info {
+        min-width: unset;
+        width: 100%;
+    }
+    .main-image { margin-bottom: 1.5rem; }
+    h1 { font-size: 1.4rem; }
+    p { font-size: 1rem; }
 }
-@media (max-width: 700px) {
-  .similar-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media (max-width: 600px) {
+    .container { padding: 0.7rem; }
+    h1 { font-size: 1.14rem; }
+    p { font-size: 0.96rem; }
 }
-@media (max-width: 480px) {
-  .similar-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+@media (max-width: 900px) {
+    .similar-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+    .similar-grid { grid-template-columns: repeat(2, 1fr); }
+}
+footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 1rem;
 }
 
-footer {
-  text-align: center;
-  color: #aaa;
-  font-size: 1rem;
-}
   </style>
 </head>
 <body>
