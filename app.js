@@ -12,7 +12,7 @@ app.use('/pictures', express.static('public/pictures'));
 
 // Homepage = Gallery
 app.get('/', (req, res) => {
-  const imagesDir = path.join(__dirname, 'public/pictures/test/logos');
+  const imagesDir = path.join(__dirname, 'public/pictures/test/overview');
   fs.readdir(imagesDir, (err, files) => {
     if (err) {
       return res.status(500).send('Error loading images');
