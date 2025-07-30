@@ -11,40 +11,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
   <style>
- body {
-    font-family: "Special Gothic Expanded One", sans-serif;
-}
-.container {
-    max-width: 900px;
-    margin: 3rem auto;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 16px rgba(35,30,45,0.06);
-    padding: 2rem;
-}
-img { 
-    width: 100%;
-    margin-bottom: 2rem;
-}
-.back-link {
-    display: inline-block;
-    margin-bottom: 2rem;
-    color: #2b2065;
-    text-decoration: none;
-}
-.back-link:hover { 
-    text-decoration: underline;
-}
-h1 { font-size: 2rem; }
-p { font-size: 1.1rem; }
-.flex-main {
+    body {
+      font-family: "Special Gothic Expanded One", sans-serif;
+    }
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(35,30,45,0.06);
+      padding: 2rem;
+    }
+    img { 
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #2b2065;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    h1 { font-size: 2rem; }
+    p { font-size: 1.1rem; }
+    .flex-main {
       display: flex;
       gap: 2rem;
       align-items: flex-start;
       max-width: 900px;
       width: 100%;
     }
-.main-image {
+    .main-image {
       flex: 1 1 50%;
       min-width: 250px;
       display: flex;
@@ -65,7 +63,7 @@ p { font-size: 1.1rem; }
       justify-content: center;
       min-width: 200px;
     }
- @media (max-width: 900px) {
+    @media (max-width: 900px) {
       .container, .flex-main {
         max-width: 100%;
         padding: 1rem;
@@ -85,7 +83,6 @@ p { font-size: 1.1rem; }
       h1 { font-size: 1.4rem; }
       p { font-size: 1rem; }
     }
-
     @media (max-width: 600px) {
       .container {
         padding: 0.7rem;
@@ -93,7 +90,6 @@ p { font-size: 1.1rem; }
       h1 { font-size: 1.14rem; }
       p { font-size: 0.96rem; }
     }
-
     .tag-list {
       display: flex;
       gap: 0.5rem;
@@ -108,38 +104,47 @@ p { font-size: 1.1rem; }
       font-size: 1rem;
       transition: background 0.15s;
     }
-    .tag-link:hover {
-      background: #e1e1fa;
+    .tag-link:hover { background: #e1e1fa; }
+    .variant-thumb {
+      width:70px;
+      height:auto;
+      border-radius:0.4rem;
+      box-shadow:0 1px 4px #ccc;
+      cursor:pointer;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: 2px solid transparent;
+      transition: border 0.15s;
     }
-.similar-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    justify-items: center;
-}
-@media (max-width: 900px) {
-    .similar-grid { grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 600px) {
-    .similar-grid { grid-template-columns: repeat(2, 1fr); }
-}
-footer {
-    text-align: center;
-    color: #aaa;
-    font-size: 1rem;
-}
-
+    .variant-thumb.selected {
+      border: 2px solid #2b2065;
+    }
+    .similar-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      justify-items: center;
+    }
+    @media (max-width: 900px) {
+      .similar-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .similar-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
   <a href="/" class="back-link" style="padding-left: 3rem; padding-top:2rem;">&larr; Back to Gallery</a>
-  <!-- main pic -->
-
-      <div class="container" style="margin-top:-1rem">
+  <div class="container" style="margin-top:-1rem">
     <div class="flex-main">
-      <div class="main-image">
-        <a href="/pictures/test/<%= design.image %>" class="glightbox" data-gallery="main">
-          <img src="/pictures/test/<%= design.image %>" alt="<%= design.title %>" style="cursor:zoom-in;">
+      <div class="main-image" id="main-logo-wrapper">
+        <a id="main-logo-link" href="/pictures/test/<%= design.image %>" class="glightbox" data-gallery="main">
+          <img id="main-logo-img" src="/pictures/test/<%= design.image %>" alt="<%= design.title %>" style="cursor:zoom-in;">
         </a>
       </div>
       <div class="main-info">
@@ -152,96 +157,84 @@ footer {
               <a href="/tags/<%= encodeURIComponent(tag) %>" class="tag-link"><%= tag %></a>
             <% }) %>
           </div>
-           <% if (design.variants && design.variants.length) { %>
-        <div style="margin-top:2.5rem;">
-            <h3>Color Variants</h3>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <% design.variants.forEach(variant => { %>
-                <img 
-                src="/pictures/test/logos/<%= variant %>" 
-                alt="Color Variant" 
-                class="variant-thumb"
-                data-img="/pictures/test/logos/<%= variant %>"
-                style="width:70px;height:auto;border-radius:0.4rem;box-shadow:0 1px 4px #ccc;cursor:pointer;"
-                >
-            <% }) %>
+          <% if (design.variants && design.variants.length) { %>
+            <div style="margin-top:2.5rem;">
+              <h3>Color Variants</h3>
+              <div id="variant-thumbs" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <% design.variants.forEach((variant, idx) => { %>
+                  <img 
+                    src="/pictures/test/logos/<%= variant %>" 
+                    alt="Color Variant" 
+                    class="variant-thumb<%= idx === 0 ? '' : '' %>"
+                    data-img="/pictures/test/logos/<%= variant %>"
+                  >
+                <% }) %>
+              </div>
             </div>
-        </div>
-        <% } %>
+          <% } %>
         </div>
       </div>
     </div>
   </div>
 
-
-<!-- similar -->
-
-<h3 style="text-align:center;margin-top:2.5rem">Similar Designs</h3>
-<div style="display:flex;justify-content:center;padding:1.5rem 0;">
-  <div class="similar-grid">
-    <% similar.forEach(sim => { %>
-      <a href="/design/<%= sim.id %>" style="width:100%;max-width:150px;text-align:center;text-decoration:none;">
-        <img src="/pictures/test/<%= sim.image %>" style="width:100%;border-radius:0.5rem;">
-        <div style="margin-top:0.5rem"><%= sim.title %></div>
-      </a>
-    <% }) %>
+  <h3 style="text-align:center;margin-top:2.5rem">Similar Designs</h3>
+  <div style="display:flex;justify-content:center;padding:1.5rem 0;">
+    <div class="similar-grid">
+      <% similar.forEach(sim => { %>
+        <a href="/design/<%= sim.id %>" style="width:100%;max-width:150px;text-align:center;text-decoration:none;">
+          <img src="/pictures/test/<%= sim.image %>" style="width:100%;border-radius:0.5rem;">
+          <div style="margin-top:0.5rem"><%= sim.title %></div>
+        </a>
+      <% }) %>
+    </div>
   </div>
-</div>
-
-
-
-<!-- footer -->
 
   <footer style="margin-top:2rem;">
     &copy; <%= new Date().getFullYear() %> Era Avdiu. All rights reserved.
   </footer>
 
-<!-- glight -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-  GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
-</script>
+  <!-- glightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    let lightbox;
 
-
-
-<!-- script -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-  let lightbox;
-
-  function updateLightbox() {
-    if (lightbox) {
-      lightbox.destroy();
+    // Utility: replace the main image + link
+    function setMainImage(imgUrl, altText) {
+      const wrapper = document.getElementById('main-logo-wrapper');
+      wrapper.innerHTML = `
+        <a id="main-logo-link" href="${imgUrl}" class="glightbox" data-gallery="main">
+          <img id="main-logo-img" src="${imgUrl}" alt="${altText}" style="cursor:zoom-in;">
+        </a>
+      `;
+      updateLightbox();
     }
-    lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
-  }
 
-  function setMainImage(imgUrl, altText) {
-    // Replace the whole main image link (GLightbox needs new DOM)
-    const wrapper = document.getElementById('main-logo-wrapper');
-    wrapper.innerHTML = `
-      <a id="main-logo-link" href="${imgUrl}" class="glightbox" data-gallery="main">
-        <img id="main-logo-img" src="${imgUrl}" alt="${altText}" style="cursor:zoom-in;">
-      </a>
-    `;
-    updateLightbox();
-  }
+    // Utility: initialize/re-initialize lightbox
+    function updateLightbox() {
+      if (lightbox) {
+        lightbox.destroy();
+      }
+      lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+    }
 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Initial lightbox
-    updateLightbox();
+    document.addEventListener('DOMContentLoaded', function() {
+      updateLightbox();
 
-    document.querySelectorAll('.variant-thumb').forEach(function(thumb) {
-      thumb.addEventListener('click', function() {
-        setMainImage(this.dataset.img, this.alt);
-      });
+      // Only add variant switching if there are variants
+      var thumbs = document.querySelectorAll('.variant-thumb');
+      if (thumbs.length) {
+        thumbs.forEach(function(thumb) {
+          thumb.addEventListener('click', function() {
+            // Deselect all, highlight this one
+            thumbs.forEach(t => t.classList.remove('selected'));
+            this.classList.add('selected');
+
+            // Update main image + link/lightbox
+            setMainImage(this.dataset.img, this.alt);
+          });
+        });
+      }
     });
-  });
-</script>
-
-
-
-
-
+  </script>
 </body>
 </html>
