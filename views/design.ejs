@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title><%= design.title %> - Design Detail</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,176 +11,211 @@
 
   <style>
     body {
-      font-family: "Special Gothic Expanded One", sans-serif;
+        font-family: "Special Gothic Expanded One", sans-serif;
     }
     .container {
-      max-width: 900px;
-      margin: 3rem auto;
-      background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 4px 16px rgba(35,30,45,0.06);
-      padding: 2rem;
+        max-width: 650px; 
+        margin: 3rem auto; 
+        background: #fff; 
+        border-radius: 1rem; 
+        box-shadow: 0 4px 16px rgba(35,30,45,0.06); 
+        padding: 2rem; 
+    }
+    img { 
+        width: 100%; 
+        margin-bottom: 2rem; 
     }
     .back-link {
-      display: inline-block;
-      margin-bottom: 2rem;
-      color: #2b2065;
-      text-decoration: none;
+        display: inline-block; 
+        margin-bottom: 2rem; 
+        color: #2b2065; 
+        text-decoration: none; 
     }
-    .back-link:hover {
-      text-decoration: underline;
+    .back-link:hover { 
+        text-decoration: underline; 
     }
-    h1 {
-      font-size: 2rem;
+    h1 { 
+        font-size: 2rem; 
     }
-    p {
-      font-size: 1.1rem;
+    p { 
+        font-size: 1.1rem;
     }
     .flex-main {
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
-      max-width: 900px;
-      width: 100%;
-    }
-    .main-image {
-      flex: 1 1 50%;
-      min-width: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .main-image img {
-      width: 100%;
-      max-width: 370px;
-      border-radius: 1rem;
-      margin-bottom: 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-    .main-info {
-      flex: 1 1 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-width: 200px;
-    }
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 900px;
+}
+.main-image {
+  flex: 1 1 50%;
+  min-width: 250px;
+}
+.main-info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px;
+}
+@media (max-width: 700px) {
+  .flex-main {
+    flex-direction: rows;
+    align-items: center;
+  }
+  .main-image, .main-info { min-width: unset; width: 100%; }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 { font-size: 1.2rem; }
+  p { font-size: 0.96rem; }
+}
+.similar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+@media (max-width: 900px) {
+  .similar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .similar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .similar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    /* Responsive: stack vertically at <= 900px */
-    @media (max-width: 900px) {
-      .container, .flex-main {
-        max-width: 100%;
-        padding: 1rem;
-      }
-      .flex-main {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-      }
-      .main-image, .main-info {
-        min-width: unset;
-        width: 100%;
-      }
-      .main-image {
-        margin-bottom: 1.5rem;
-      }
-      h1 { font-size: 1.4rem; }
-      p { font-size: 1rem; }
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 0.7rem;
-      }
-      h1 { font-size: 1.14rem; }
-      p { font-size: 0.96rem; }
-    }
-
-    .tag-list {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .tag-link {
-      background: #f0f0f0;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      color: #2b2065;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: background 0.15s;
-    }
-    .tag-link:hover {
-      background: #e1e1fa;
-    }
-    .similar-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1rem;
-      justify-items: center;
-    }
-    @media (max-width: 900px) {
-      .similar-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 600px) {
-      .similar-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    footer {
-      text-align: center;
-      color: #aaa;
-      font-size: 1rem;
-    }
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 1rem;
+}
   </style>
 </head>
 <body>
   <a href="/" class="back-link" style="padding-left: 3rem; padding-top:2rem;">&larr; Back to Gallery</a>
   <!-- main pic -->
-  <div class="container" style="margin-top:-1rem">
-    <div class="flex-main">
-      <div class="main-image">
-        <a href="/pictures/test/<%= design.image %>" class="glightbox" data-gallery="main">
-          <img src="/pictures/test/<%= design.image %>" alt="<%= design.title %>" style="cursor:zoom-in;">
+  <div class="container flex-main" style="margin-top:-1rem">
+    <div class="main-image" id="main-logo-wrapper">
+        <a id="main-logo-link" href="/pictures/test/<%= design.image %>" class="glightbox" data-gallery="main">
+            <img id="main-logo-img" src="/pictures/test/<%= design.image %>" alt="<%= design.title %>" style="cursor:zoom-in;">
         </a>
-      </div>
-      <div class="main-info">
+    </div>
+
+
+
+    <div class="main-info">
         <h1><%= design.title %></h1>
         <p><%= design.description %></p>
         <div style="margin-top:2rem">
-          <h3>Tags</h3>
-          <div class="tag-list">
-            <% design.tags.forEach(tag => { %>
-              <a href="/tags/<%= encodeURIComponent(tag) %>" class="tag-link"><%= tag %></a>
-            <% }) %>
-          </div>
+        <h3>Tags</h3>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <% design.tags.forEach(tag => { %>
+            <a href="/tags/<%= encodeURIComponent(tag) %>" style="background:#f0f0f0;padding:0.5rem 1rem;border-radius:0.5rem;color:#2b2065;text-decoration:none;font-size:1rem;transition:background 0.15s;">
+                <%= tag %>
+            </a>
+        <% }) %>
         </div>
-      </div>
-    </div>
-  </div>
+        <% if (design.variants && design.variants.length) { %>
+        <div style="margin-top:2.5rem;">
+            <h3>Color Variants</h3>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <% design.variants.forEach(variant => { %>
+                <img 
+                src="/pictures/test/logos/<%= variant %>" 
+                alt="Color Variant" 
+                class="variant-thumb"
+                data-img="/pictures/test/logos/<%= variant %>"
+                style="width:70px;height:auto;border-radius:0.4rem;box-shadow:0 1px 4px #ccc;cursor:pointer;"
+                >
+            <% }) %>
+            </div>
+        </div>
+        <% } %>
 
-  <!-- similar -->
-  <h3 style="text-align:center;margin-top:2.5rem">Similar Designs</h3>
-  <div style="display:flex;justify-content:center;padding:1.5rem 0;">
-    <div class="similar-grid">
-      <% similar.forEach(sim => { %>
-        <a href="/design/<%= sim.id %>" style="width:100%;max-width:150px;text-align:center;text-decoration:none;">
-          <img src="/pictures/test/<%= sim.image %>" style="width:100%;border-radius:0.5rem;">
-          <div style="margin-top:0.5rem"><%= sim.title %></div>
-        </a>
-      <% }) %>
+
+
     </div>
+    </div>
+</div>
+
+    
+<!-- similar -->
+
+<h3 style="text-align:center;margin-top:2.5rem">Similar Designs</h3>
+<div style="display:flex;justify-content:center;padding:1.5rem 0;">
+  <div class="similar-grid">
+    <% similar.forEach(sim => { %>
+      <a href="/design/<%= sim.id %>" style="width:100%;max-width:150px;text-align:center;text-decoration:none;">
+        <img src="/pictures/test/<%= sim.image %>" style="width:100%;border-radius:0.5rem;">
+        <div style="margin-top:0.5rem"><%= sim.title %></div>
+      </a>
+    <% }) %>
   </div>
+</div>
+
+
+
+<!-- footer -->
 
   <footer style="margin-top:2rem;">
     &copy; <%= new Date().getFullYear() %> Era Avdiu. All rights reserved.
   </footer>
 
-  <!-- glight -->
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script>
-    GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
-  </script>
+<!-- glight -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+</script>
+
+
+
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  let lightbox;
+
+  function updateLightbox() {
+    if (lightbox) {
+      lightbox.destroy();
+    }
+    lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+  }
+
+  function setMainImage(imgUrl, altText) {
+    // Replace the whole main image link (GLightbox needs new DOM)
+    const wrapper = document.getElementById('main-logo-wrapper');
+    wrapper.innerHTML = `
+      <a id="main-logo-link" href="${imgUrl}" class="glightbox" data-gallery="main">
+        <img id="main-logo-img" src="${imgUrl}" alt="${altText}" style="cursor:zoom-in;">
+      </a>
+    `;
+    updateLightbox();
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initial lightbox
+    updateLightbox();
+
+    document.querySelectorAll('.variant-thumb').forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        setMainImage(this.dataset.img, this.alt);
+      });
+    });
+  });
+</script>
+
+
+
+
+
 </body>
 </html>
