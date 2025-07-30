@@ -12,7 +12,7 @@ app.use('/pictures', express.static('public/pictures'));
 
 // Homepage = Gallery
 app.get('/', (req, res) => {
-  const imagesDir = path.join(__dirname, 'public/pictures/test/start-1');
+  const imagesDir = path.join(__dirname, 'public/pictures/test/logos');
   fs.readdir(imagesDir, (err, files) => {
     if (err) {
       return res.status(500).send('Error loading images');
@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 
 // Route for Logos gallery page
 app.get('/logos', (req, res) => {
-  const imagesDir = path.join(__dirname, 'public/pictures/test/logos');
+  const imagesDir = path.join(__dirname, 'public/pictures/test/start-1');
   fs.readdir(imagesDir, (err, files) => {
     if (err) {
       return res.status(500).send('Error loading images');
