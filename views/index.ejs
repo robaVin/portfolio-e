@@ -174,17 +174,23 @@ footer {
 <!-- nav  -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 py-2">
-  <a class="navbar-brand pl-2" href="/" style="font-size: 2rem;">Era Avdiu</a>
+  <a class="navbar-brand pl-2" href="/">Era Avdiu</a>
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNav"
     aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse flex-grow-0" id="mainNav">
-    <div class="navbar-nav ml-auto">
-      <a class="nav-link active" href="/">Overview</a>
-      <a class="nav-link" href="/logos">Logos</a>
-      <a class="nav-link" href="/artwork">Artwork</a>
-    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link <%= activePage === 'overview' ? 'active' : '' %>" href="/">Overview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link <%= activePage === 'logos' ? 'active' : '' %>" href="/logos">Logos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link <%= activePage === 'artwork' ? 'active' : '' %>" href="/artwork">Artwork</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
