@@ -60,6 +60,10 @@
     "description": "Studio branding materials in a dark color palette, offering a sleek and modern appearance.",
     "image": "s-brand-d.png",
     "palette": ["black", "orange", "white"],
+    "variants": [
+      "s-brand-l.png",
+      "s-brand-d.png"
+    ],
     "tags": ["studio", "branding", "dark", "modern"]
   },
   "o-brand-poster-l-2": {
@@ -81,6 +85,12 @@
     "description": "A bright, blue-accented branding design for the coffee shop, evoking freshness and tranquility.",
     "image": "o-brand-l-blue.png",
     "palette": ["light blue", "white", "brown"],
+    "variants": [
+      "o-brand-d-blue.png",
+      "o-brand-d-brown.png",
+      "o-brand-l-brown.png",
+      "o-brand-l-blue.png"   
+    ],
     "tags": ["coffee shop", "branding", "light", "blue"]
   },
   "o-brand-glass": {
@@ -95,6 +105,12 @@
     "description": "A branding set in deep brown tones, conveying richness and tradition for the coffee shop.",
     "image": "o-brand-d-brown.png",
     "palette": ["dark brown", "beige", "white"],
+    "variants": [
+      "o-brand-l-brown.png",
+      "o-brand-d-blue.png",
+      "o-brand-l-blue.png",
+      "o-brand-d-brown.png"   
+    ],
     "tags": ["coffee shop", "branding", "dark", "brown"]
   },
   "o-brand-d-blue": {
@@ -102,6 +118,12 @@
     "description": "A sophisticated branding design for the coffee shop, using dark blue and neutral tones.",
     "image": "o-brand-d-blue.png",
     "palette": ["dark blue", "beige", "white"],
+    "variants": [
+      "o-brand-l-brown.png",
+      "o-brand-d-brown.png",
+      "o-brand-l-blue.png",
+      "o-brand-d-blue.png"   
+    ],
     "tags": ["coffee shop", "branding", "dark", "blue"]
   },
   "corp-card": {
@@ -119,10 +141,14 @@
     "tags": ["corporate", "envelope", "stationery"]
   },
   "corp-logo-l": {
-    "title": "Corporate Logo (Light Theme)",
+    "title": "Corporate Logo",
     "description": "A refined corporate logo displayed on a light background for formal and digital uses.",
     "image": "corp-logo-l.png",
     "palette": ["white", "navy", "blue"],
+    "variants": [
+      "corp-logo-d.png",
+      "corp-logo-l.png"
+    ],
     "tags": ["corporate", "logo", "light", "branding"]
   },
   "corp-paper": {
@@ -217,10 +243,16 @@
     "tags": ["magazine", "website", "ipad", "digital"]
   },
   "o-brand-l-brown": {
-    "title": "Coffee Shop Branding (Light Brown)",
+    "title": "Coffee Shop Branding",
     "description": "Branding suite for the coffee shop, utilizing a warm, light brown palette for a cozy atmosphere.",
     "image": "o-brand-l-brown.png",
     "palette": ["light brown", "white", "cream"],
+    "variants": [
+      "o-brand-d-brown.png",
+      "o-brand-d-blue.png",
+      "o-brand-l-blue.png",
+      "o-brand-l-brown.png"   
+    ],
     "tags": ["coffee shop", "branding", "light", "brown"]
   },
   "o-brand-mug": {
@@ -252,10 +284,14 @@
     "tags": ["coffee shop", "storefront", "retail"]
   },
   "s-brand-l": {
-    "title": "Studio Branding (Light Theme)",
+    "title": "Studio Branding",
     "description": "A bright and vibrant branding suite for the studio, optimized for light backgrounds.",
     "image": "s-brand-l.png",
     "palette": ["white", "orange", "gray"],
+    "variants": [
+      "s-brand-d.png",
+      "s-brand-l.png"   
+    ],
     "tags": ["studio", "branding", "light"]
   },
   "s-brand-sign-2": {
@@ -312,6 +348,10 @@
     "description": "A magazine-branded envelope in a dark color scheme, perfect for premium mailings and special editions.",
     "image": "mag-env-d.png",
     "palette": ["black", "red", "white"],
+    "variants": [
+      "mag-env-l.png",
+      "mag-env-d.png"
+    ],
     "tags": ["magazine", "envelope", "dark", "stationery"]
   },
   "mag-full": {
@@ -426,10 +466,14 @@
     "tags": ["corporate", "envelope", "set", "stationery"]
   },
   "corp-logo-d": {
-    "title": "Corporate Logo (Dark Theme)",
+    "title": "Corporate Logo",
     "description": "A refined corporate logo presented in a dark color scheme for stylish, high-contrast branding.",
     "image": "corp-logo-d.png",
     "palette": ["black", "white", "blue"],
+    "variants": [
+      "corp-logo-l.png",
+      "corp-logo-d.png"
+    ],
     "tags": ["corporate", "logo", "dark", "branding"]
   },
   "corp-paper-2": {
@@ -445,5 +489,18 @@
     "image": "corp-pen-2.jpg",
     "palette": ["silver", "navy", "white"],
     "tags": ["corporate", "pen", "stationery", "set"]
+  },
+  "artwork-1": {
+    "title": "Artwork",
+    "description": "A poster",
+    "image": "artwork-1.png",
+    "palette": ["silver", "navy", "white"],
+    "tags": ["artwork"]
+  },"artwork-2": {
+    "title": "Artwork",
+    "description": "A poster.",
+    "image": "artwork-2.jpg",
+    "palette": ["silver", "navy", "white"],
+    "tags": ["artwork"]
   }
 }
